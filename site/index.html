@@ -1,0 +1,213 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以來源為起點，持續累積的中文 LLM 研究 Wiki。"><title>知識庫 · LLM 研究 Wiki</title><link rel="stylesheet" href="./assets/style.css"><script src="./assets/main.js" defer></script></head><body><a class="skip" href="#main">跳至主要內容</a><header><a class="brand" href="./index.html"><span class="mark">W<span>↗</span></span><span>LLM 研究 Wiki<small>RESEARCH, CONNECTED.</small></span></a><nav aria-label="主要導覽"><a href="./index.html">知識庫</a><a href="./rules.html">協作規則</a><a href="./about.html">關於</a></nav></header><div class="layout"><aside class="sidebar"><p class="eyebrow">EXPLORER / 知識導覽</p><a href="./index.html">◉　全部筆記 <span>8</span></a><a href="./index.html?type=source">來源摘要<span>3</span></a><a href="./index.html?type=concept">概念筆記<span>3</span></a><a href="./index.html?type=synthesis">綜合分析<span>1</span></a><a href="./index.html?type=question">研究問題<span>1</span></a><a href="./index.html?type=entity">模型與工具<span>0</span></a><div class="side-note"><span class="dot"></span> 持續生長的知識庫<p>從來源出發，讓每次閱讀<br>都留下可追溯的連結。</p></div><a href="./log.html">↗　更新紀錄</a></aside><main id="main"><section class="hero"><p class="eyebrow">A PERSONAL KNOWLEDGE GARDEN</p><h1>讓研究累積，<br>讓知識<span>彼此連結。</span></h1><p class="intro">從 Transformer 到檢索與調適，將每次閱讀整理成<br class="desktop">有來源、有脈絡、能持續延伸的中文研究筆記。</p><div class="stats"><div><strong>03</strong><span>研究來源</span></div><div><strong>03</strong><span>核心概念</span></div><div><strong>08</strong><span>知識頁面</span></div></div><div class="orbit" aria-hidden="true"><div class="node n1">TRANSFORMER</div><div class="node n2">RAG</div><div class="node n3">LoRA</div><div class="core">知識<br><small>CONNECTED</small></div></div></section><section class="library" aria-labelledby="library-title"><div class="section-head"><div><p class="eyebrow">THE LIBRARY</p><h2 id="library-title">探索研究筆記</h2></div><label class="search"><span>搜尋</span><input id="search" type="search" placeholder="搜尋主題、方法或關鍵字…" aria-label="搜尋研究筆記"></label></div><div class="filters" aria-label="依類型篩選"><button data-filter="all" aria-pressed="true">全部</button><button data-filter="source" aria-pressed="false">來源摘要</button><button data-filter="concept" aria-pressed="false">概念筆記</button><button data-filter="synthesis" aria-pressed="false">綜合分析</button><button data-filter="question" aria-pressed="false">研究問題</button><button data-filter="entity" aria-pressed="false">模型與工具</button></div><p id="result-count" class="result-count" aria-live="polite">共 8 篇筆記</p><div class="cards"><a class="card" href="articles/concepts/low-rank-adaptation.html" data-type="concept" data-search="低秩調適（LoRA） 
+# 低秩調適（LoRA）
+
+## 定義與範圍
+低秩調適（Low-Rank Adaptation）以較小的矩陣表示特定權重更新。 [來源摘要](../sources/2021-hu-lora.md)
+
+## 核心機制
+基礎權重固定不等於沒有訓練；需明確交代更新哪些模組與使用何種資料。 [來源摘要](../sources/2021-hu-lora.md)
+
+## 跨來源共識與分歧
+目前此概念只有一篇對應來源，不宣稱已形成跨來源共識。
+
+## 限制與待查證
+來源 §4.1；尚未整理量化或其他調適變體。
+
+## 相關頁面
+- [研究比較](../syntheses/rag-and-lora.md)
+- [研究方向](../questions/research-roadmap.md)
+"><div class="card-top"><span class="badge">概念筆記</span><span class="number">01</span></div><h3>低秩調適（LoRA）</h3><p>將研究中的核心機制整理成可連結的知識。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/concepts/retrieval-augmented-generation.html" data-type="concept" data-search="檢索增強生成（RAG） 
+# 檢索增強生成（RAG）
+
+## 定義與範圍
+檢索增強生成（Retrieval-Augmented Generation）讓生成過程參考外部檢索內容。 [來源摘要](../sources/2020-lewis-rag.md)
+
+## 核心機制
+原始論文同時包含檢索與訓練；RAG 不必然與微調互斥。 [來源摘要](../sources/2020-lewis-rag.md)
+
+## 跨來源共識與分歧
+目前此概念只有一篇對應來源，不宣稱已形成跨來源共識。
+
+## 限制與待查證
+來源 §2；尚未收錄現代工程管線的比較研究。
+
+## 相關頁面
+- [研究比較](../syntheses/rag-and-lora.md)
+- [研究方向](../questions/research-roadmap.md)
+"><div class="card-top"><span class="badge">概念筆記</span><span class="number">02</span></div><h3>檢索增強生成（RAG）</h3><p>將研究中的核心機制整理成可連結的知識。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/concepts/transformer.html" data-type="concept" data-search="Transformer 的架構層次 
+# Transformer 的架構層次
+
+## 定義與範圍
+注意力（Attention）是聚合資訊的機制；Transformer 是組合注意力、前饋網路與位置資訊的架構。 [來源摘要](../sources/2017-vaswani-transformer.md)
+
+## 核心機制
+原始設計同時包含編碼器與解碼器。理解架構時應先確認模型屬於哪一類，而非從名稱推定所有細節。 [來源摘要](../sources/2017-vaswani-transformer.md)
+
+## 跨來源共識與分歧
+目前此概念只有一篇對應來源，不宣稱已形成跨來源共識。
+
+## 限制與待查證
+來源 §3；本頁只整理原始架構，尚未比較後續變體。
+
+## 相關頁面
+- [研究比較](../syntheses/rag-and-lora.md)
+- [研究方向](../questions/research-roadmap.md)
+"><div class="card-top"><span class="badge">概念筆記</span><span class="number">03</span></div><h3>Transformer 的架構層次</h3><p>將研究中的核心機制整理成可連結的知識。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/questions/research-roadmap.html" data-type="question" data-search="研究方向與首批問題 
+# 研究方向與首批問題
+
+## 問題
+如何建立對 LLM 的可追溯理解，並比較不同方法在具體應用條件下的取捨？
+
+## 目前已知與證據缺口
+已收錄 Transformer、RAG 與 LoRA 的指定章節摘要。Agent、評估與安全仍缺少專門來源；以下問題尚未全部解決。
+
+## 子問題
+1. 架構與訓練：模型如何利用上下文產生輸出？有哪些已知限制？
+2. RAG 與微調：在什麼資料、成本與評估條件下，兩者適合解決哪些問題？
+3. Agent：如何評估工具使用、任務完成與錯誤恢復？
+4. 評估與安全：如何設計可重現、貼近使用情境的測試？
+
+## 查證計畫
+先選一個子問題，每次收錄一份可取得原文的論文或官方技術文件。記錄版本、方法與限制；有足夠共同評估條件後再寫比較分析。
+
+## 解決條件
+每個子問題至少有可追溯的來源與限制說明；比較結論須說明共同條件、分歧與尚未驗證之處。來源數量本身不代表問題已解決。
+
+## 相關頁面
+- [知識庫索引](../index.md)
+
+- [Transformer 架構](../concepts/transformer.md)
+- [RAG 與 LoRA 比較](../syntheses/rag-and-lora.md)
+"><div class="card-top"><span class="badge">研究問題</span><span class="number">04</span></div><h3>研究方向與首批問題</h3><p>保留尚未回答的問題，規劃下一步閱讀。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/sources/2017-vaswani-transformer.html" data-type="source" data-search="Transformer：Attention Is All You Need 
+# Transformer：Attention Is All You Need
+
+## 書目與閱讀範圍
+- 原始標題：Attention Is All You Need
+- 作者：Ashish Vaswani 等八位作者
+- 首次提交：2017-06-12
+- 採用版本：2023-08-02，v7
+- 來源類型：arXiv 論文版本；本頁不另認證同儕審查狀態
+- 原始網址：[arXiv 1706.03762v7](https://arxiv.org/abs/1706.03762v7)
+- 原始紀錄：[本地來源紀錄](../../raw/2017-vaswani-transformer-record.md)
+- 取得日期：2026-11-16
+- 閱讀範圍：摘要、第 3.1–3.5 節文字；未逐項複核圖表、訓練結果或附錄。
+
+## 研究問題與主要貢獻
+來源主張：提出 Transformer，以注意力取代序列轉換架構中的循環與卷積。原始設計是編碼器—解碼器，不能直接視為所有現代聊天模型的規格。[原文摘要](https://arxiv.org/html/1706.03762v7#abstract)
+
+## 方法與評估條件
+編碼器與解碼器結合多頭注意力、前饋網路與位置編碼；解碼端遮罩限制對未來位置的存取。[原文 §3](https://arxiv.org/html/1706.03762v7#S3)
+
+## 結果與證據位置
+本筆記聚焦架構，不轉錄分數。原文以機器翻譯評估；不能從這些任務直接推論聊天品質。請參閱原文 §6，本次未複核該節結果表。
+
+## 限制與分歧
+需區分原始編碼器—解碼器架構與後續變體；本次不比較各變體的效能。
+
+## AI 綜合推論
+理解元件有助於區分「模型如何處理序列」與「如何取得外部知識」兩種不同問題。
+
+## 待確認問題
+後續 decoder-only 模型如何改變訓練目標？需另收錄研究。
+
+## 相關頁面
+- [對應概念](../concepts/transformer.md)
+- [RAG 與 LoRA 比較](../syntheses/rag-and-lora.md)
+"><div class="card-top"><span class="badge">來源摘要</span><span class="number">05</span></div><h3>Transformer：Attention Is All You Need</h3><p>閱讀原始論文，保留方法、證據與適用範圍。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/sources/2020-lewis-rag.html" data-type="source" data-search="RAG：檢索與生成的結合 
+# RAG：檢索與生成的結合
+
+## 書目與閱讀範圍
+- 原始標題：Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+- 作者：Patrick Lewis 等十二位作者
+- 首次提交：2020-05-22
+- 採用版本：2021-04-12，v4
+- 來源類型：arXiv 論文版本；本頁不另認證同儕審查狀態
+- 原始網址：[arXiv 2005.11401v4](https://arxiv.org/abs/2005.11401v4)
+- 原始紀錄：[本地來源紀錄](../../raw/2020-lewis-rag-record.md)
+- 取得日期：2026-11-16
+- 閱讀範圍：摘要、導論、第 2.1–2.4 節文字；未逐項複核結果表與附錄。
+
+## 研究問題與主要貢獻
+來源主張：結合參數記憶與非參數記憶，讓生成參考檢索文件。[原文摘要](https://arxiv.org/html/2005.11401v4#abstract)
+
+## 方法與評估條件
+原文使用 DPR 檢索器、Wikipedia 索引與 BART-large 生成器。訓練時更新查詢編碼器與生成器，固定文件編碼器和索引。因此此論文的 RAG 並非「完全不訓練模型」。[原文 §2.2–2.4](https://arxiv.org/html/2005.11401v4#S2)
+
+## 結果與證據位置
+RAG-Sequence 與 RAG-Token 對檢索文件的邊際化方式不同。本次不轉錄或重現任務分數。[原文 §2.1](https://arxiv.org/html/2005.11401v4#S2.SS1)
+
+## 限制與分歧
+有文件可參考不等於每句輸出均正確，也不能將這個特定架構等同所有現代 RAG 管線。
+
+## AI 綜合推論
+研究知識更新時，應同時檢查文件內容、檢索結果與生成內容，避免只評估最終答案。
+
+## 待確認問題
+哪些檢索錯誤會改變答案？需要另訂測試集。
+
+## 相關頁面
+- [對應概念](../concepts/retrieval-augmented-generation.md)
+- [RAG 與 LoRA 比較](../syntheses/rag-and-lora.md)
+"><div class="card-top"><span class="badge">來源摘要</span><span class="number">06</span></div><h3>RAG：檢索與生成的結合</h3><p>閱讀原始論文，保留方法、證據與適用範圍。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/sources/2021-hu-lora.html" data-type="source" data-search="LoRA：低秩參數調適 
+# LoRA：低秩參數調適
+
+## 書目與閱讀範圍
+- 原始標題：LoRA: Low-Rank Adaptation of Large Language Models
+- 作者：Edward J. Hu 等八位作者
+- 首次提交：2021-06-17
+- 採用版本：2021-10-16，v2
+- 來源類型：arXiv 論文版本；本頁不另認證同儕審查狀態
+- 原始網址：[arXiv 2106.09685v2](https://arxiv.org/abs/2106.09685v2)
+- 原始紀錄：[本地來源紀錄](../../raw/2021-hu-lora-record.md)
+- 取得日期：2026-11-16
+- 閱讀範圍：摘要、第 2 節、第 4.1–4.2 節文字；未逐項複核實驗表與附錄。
+
+## 研究問題與主要貢獻
+來源主張：凍結預訓練權重，以可訓練的低秩矩陣表示權重更新，減少下游調適需要訓練的參數。[原文摘要](https://arxiv.org/html/2106.09685v2#abstract)
+
+## 方法與評估條件
+以 W₀ + BA 表示調適後權重；W₀ 固定，A 與 B 可訓練。低秩限制施加於更新，而非宣稱原始權重本身必須低秩。[原文 §4.1](https://arxiv.org/html/2106.09685v2#S4.SS1)
+
+## 結果與證據位置
+低秩更新可合併回原始權重；原文關於無額外推論延遲的說明具有此合併部署前提。本次不重現任何速度或記憶體數值。[原文 §4.1](https://arxiv.org/html/2106.09685v2#S4.SS1)
+
+## 限制與分歧
+減少可訓練參數不代表免除訓練，也不代表所有任務都能使用相同秩與設定。
+
+## AI 綜合推論
+選擇方法時應區分訓練成本、部署方式與任務品質，不能以單一參數量決定優劣。
+
+## 待確認問題
+秩、資料量與目標任務之間的關係，需閱讀實驗章節與後續研究。
+
+## 相關頁面
+- [對應概念](../concepts/low-rank-adaptation.md)
+- [RAG 與 LoRA 比較](../syntheses/rag-and-lora.md)
+"><div class="card-top"><span class="badge">來源摘要</span><span class="number">07</span></div><h3>LoRA：低秩參數調適</h3><p>閱讀原始論文，保留方法、證據與適用範圍。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a><a class="card" href="articles/syntheses/rag-and-lora.html" data-type="synthesis" data-search="RAG 與 LoRA：先問要改變什麼 
+# RAG 與 LoRA：先問要改變什麼
+
+## 研究問題與範圍
+RAG 與 LoRA 是否只能二選一？本分析限於已收錄的兩篇方法論文，沒有共同基準實驗。
+
+## 結論
+AI 綜合推論：兩者處理不同層次的設計問題，不能直接以名稱排名。RAG 改變生成可參考的文件條件；LoRA 改變參數調適的表示方式。[RAG 來源 §2](../sources/2020-lewis-rag.md)、[LoRA 來源 §4](../sources/2021-hu-lora.md)
+
+## 證據比較
+| 比較面向 | RAG 原始論文 | LoRA 原始論文 |
+| --- | --- | --- |
+| 主要關注 | 檢索文件與生成結合 | 低秩參數更新 |
+| 是否涉及訓練 | 更新查詢編碼器與生成器 | 訓練新增低秩矩陣 |
+| 本頁證據 | [方法 §2](../sources/2020-lewis-rag.md) | [方法 §4](../sources/2021-hu-lora.md) |
+| 可否直接比較品質 | 沒有共同模型與測試條件 | 沒有共同模型與測試條件 |
+
+## 矛盾與替代解釋
+「RAG 完全不用訓練、LoRA 才需要訓練」不符合已收錄 RAG 論文的設定。這不是兩篇論文互相矛盾，而是常見概括忽略方法細節。[RAG 方法摘要](../sources/2020-lewis-rag.md)
+
+## 限制與下一步
+目前沒有收錄兩者結合的實證研究，也未執行本地模型實驗。AI 提出的後續計畫：固定基礎模型與題目，分別量測檢索品質、回答可支持性、任務品質與成本，再決定適合的組合。這是研究提案，不是已驗證結論。
+
+## 相關頁面
+- [RAG 概念](../concepts/retrieval-augmented-generation.md)
+- [LoRA 概念](../concepts/low-rank-adaptation.md)
+- [研究方向](../questions/research-roadmap.md)
+"><div class="card-top"><span class="badge">綜合分析</span><span class="number">08</span></div><h3>RAG 與 LoRA：先問要改變什麼</h3><p>連結不同方法，辨識推論與比較的邊界。</p><div class="card-bottom"><span>AI 整理草稿 · 2026-11-16</span><span aria-hidden="true">↗</span></div></a></div><p id="empty" hidden>沒有符合的筆記，請試試其他關鍵字或分類。</p><noscript><p>目前顯示全部筆記；啟用 JavaScript 可使用搜尋與篩選。</p></noscript></section><section class="method"><p class="eyebrow">HOW THIS WIKI GROWS</p><h2>不只收藏資料，也累積理解。</h2><div class="steps"><p><b>01 / 收錄</b>保留原始來源與版本，記錄閱讀範圍。</p><p><b>02 / 連結</b>整理概念、保留分歧，讓筆記互相引用。</p><p><b>03 / 維護</b>依照 AGENTS.md 更新索引與研究問題。</p></div><a href="rules.html">閱讀完整協作規則 →</a></section></main></div><footer><span>LLM 研究 Wiki · 個人研究知識庫</span><span>來源可追溯 / AI 整理草稿 / 2026.11</span></footer></body></html>
